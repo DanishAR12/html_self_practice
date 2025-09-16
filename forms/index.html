@@ -1,102 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
     <title>Forms</title>
-</head>
-<h1>Information Collect Forms</h1>
-<body>
-   <form action="/action_page.php" method="get" target="_blank" autocomplete="on">
-<label for="">First Name:</label>
-<input type="text" id="fname" name="fname" value="john"><br><br>
+  </head>
+  <h1>Information Collect Forms</h1>
+  <body>
+    <form
+      action="/action_page.php"
+      method="get"
+      target="_blank"
+      autocomplete="on"
+    >
+      <h2>input type text</h2>
+      <label for="">First Name:</label>
+      <input type="text" id="fname" name="fname" value="john" /><br /><br />
 
-<label for="lname">Last Name:</label>
-<input type="text" id="lname" name="lname" value="joe"><br> <br>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" value="joe" /><br />
+      <br />
 
-<input type="radio" name="fav_language" id="html" value="HTML">
-<label for="html">HTML</label> <br><br>
+      <h2>input type radio</h2>
+      <input type="radio" name="fav_language" id="html" value="HTML" />
+      <label for="html">HTML</label> <br /><br />
 
-<input type="radio" name="fav_language" id="css" value="CSS">
-<label for="css">CSS</label> <br><br>
+      <input type="radio" name="fav_language" id="css" value="CSS" />
+      <label for="css">CSS</label> <br /><br />
 
-<input type="radio" name="fav_language" id="javascript" value="JAVASCRIPT">
-<label for="javascript">JAVASCRIPT</label> <br><br>
+      <input
+        type="radio"
+        name="fav_language"
+        id="javascript"
+        value="JAVASCRIPT"
+      />
+      <label for="javascript">JAVASCRIPT</label> <br /><br />
 
-<input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
-<label for="vehicle1"> Ihave a bike.</label><br> <br>
+      <h2>input type checkbox</h2>
+      <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+      <label for="vehicle1"> Ihave a bike.</label><br />
+      <br />
 
-<input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
-<label for="vehicle2"> Ihave a car.</label><br> <br>
+      <input type="checkbox" name="vehicle2" id="vehicle2" value="Car" />
+      <label for="vehicle2"> Ihave a car.</label><br />
+      <br />
 
-<input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
-<label for="vehicle3"> Ihave a boat.</label><br> <br>
+      <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat" />
+      <label for="vehicle3"> Ihave a boat.</label><br />
+      <br />
 
-<label for="cars">Choose a car:</label>
-<select name="cars" id="cars">
-   <option value="volvo">Volvo</option>
-   <option value="saab">Saab</option>
-   <option value="fait" >Fait</option>
-   <option value="audi">Audi</option>
-</select> <br> <br>
+      <h2>select</h2>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fait">Fait</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <br />
 
-<label for="cars">Choose a car:</label>
-<select name="cars" id="cars">
-   <option value="volvo">Volvo</option>
-   <option value="saab">Saab</option>
-   <option value="fait" >Fait</option>
-   <option value="audi" selected>Audi</option>
-</select> <br> <br>
+      <h2>select with attribute selected</h2>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fait">Fait</option>
+        <option value="audi" selected>Audi</option>
+      </select>
+      <br />
+      <br />
 
-<label for="cars">Choose a car:</label>
-<select name="cars" id="cars" size="3">
-   <option value="volvo">Volvo</option>
-   <option value="saab">Saab</option>
-   <option value="fait" >Fait</option>
-   <option value="audi">Audi</option>
-</select> <br> <br>
+      <h2>select with attribute size=""</h2>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fait">Fait</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <br />
 
-<label for="cars">Choose a car:</label>
- <select id="cars" name="cars" size="4" multiple>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select><br><br>
+      <h2>select with attribute multiple (multiple option select)</h2>
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option></select
+      ><br /><br />
 
-<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+      <p>
+        Hold down the Ctrl (windows) / Command (Mac) button to select multiple
+        options.
+      </p>
 
-<h1>text-area</h1>
-<label for="msg">massage:</label> <br>
-<textarea name="message" id="msg" rows="5" cols="10">Text massage here</textarea> <br> <br>
+      <h2>select with optgruop</h2>
+      <label for="cars">Chose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="swedish cars">
+          <option value="volvo">Volvo</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label="german cars">
+          <option value="saba">Saba</option>
+          <option value="fait">Fait</option>
+        </optgroup>
+      </select>
 
-<label for="msg">massage:</label> <br>
-<textarea name="message" id="msg" style="width: 200px; height: 400px;">Text massage here</textarea> <br> <br>
+      <h2>text-area</h2>
+      <label for="msg">massage:</label> <br />
+      <textarea name="message" id="msg" rows="5" cols="10">
+Text massage here</textarea
+      >
+      <br />
+      <br />
 
-<h1>button</h1>
-<button onclick="alert('Hello world!')">click me!</button><br> <br>
-<h1>Fieldset</h1>
-<fieldset>
-   <legend>Personal Data</legend>
-   <label for="fname">First Name</label>
-   <input type="text" name="fname" id="fname"><br> <br>
-   <label for="lname">Last Name</label> 
-   <input type="text " name="lname" id="lname"><br> <br>
-   <input type="submit" value="submit">
-</fieldset>
-<br>
-<h1>datalist</h1>
-<input list="browsers" name="browser">
-<datalist id="browsers">
-   <option value="firefox">
-   <option value="chorme">
-   <option value="google">
-   <option value="edge">
-   <option value="microsoft">
-</datalist><br><br>
+      <h2>textarea with style width and height</h2>
+      <label for="msg">massage:</label> <br />
+      <textarea name="message" id="msg" style="width: 200px; height: 400px">
+Text massage here</textarea
+      >
+      <br />
+      <br />
+
+      <h2>button</h2>
+      <button onclick="alert('Hello world!')">click me!</button><br />
+      <br />
+      <h1>Fieldset</h1>
+      <fieldset>
+        <legend>Personal Data</legend>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" /><br />
+        <br />
+        <label for="lname">Last Name</label>
+        <input type="text " name="lname" id="lname" /><br />
+        <br />
+        <input type="submit" value="submit" />
+      </fieldset>
+      <br />
+      <h2>datalist</h2>
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="firefox"></option>
+        <option value="chorme"></option>
+        <option value="google"></option>
+        <option value="edge"></option>
+        <option value="microsoft"></option></datalist
+
+      ><br /><br />
+
+      <h2>input type color</h2>
+      <label for="fav-color">chose a favorite color:</label>
+      <input type="color" name="fav-color" id="fav-color" /><br /><br />
+
+      <h2>input type password</h2>
+      <label for="pwd">password</label>
+      <input type="password" name="pwd" id="pwd" /> <br /><br />
+
+      <h2>input type date</h2>
+      <label for="birthday">Birthday</label>
+      <input type="date" name="birthday" id="birthday">
+
+      <h2>input type date with attribute min and max</h2>
+      <label for="maxdate">Enter a date before 1980-01-01</label>
+      <input type="date" name="maxdate" id="maxdate" max="1979-01-01">
+      <br><br>
+      <label for="mindate">Enter a date after 2000-01-01</label>
+      <input type="date" name="mindate" id="mindate" min="2000-01-02">
+
+      <h2>input type date-time-local</h2>
+      <label for="birthday">Birthday</label>
+      <input type="datetime-local" name="birthday" id="birthday">
+
+      <h2>input type email</h2>
+      <label for="email">Enter your Email:</label>
+      <input type="email" id="email" name="email">
+
+      <h2>input type image submit button</h2>
+      <input type="image" src="../image/onlineimage.jpg" alt="submit" width="48px" height="48px">
+
+        <h2>input type file</h2>
+        <label for="myfile">choose a profile pic:</label>
+        <input type="file" id="myfile" name="myfile">
+
+        <h2>input type hidden</h2>
+        <input type="hidden" id="custid" name="custid" value="3456">
+
+        <h2>input type month</h2>
+        <label for="birthday">Birthday</label>
+        <input type="month" id="birthday" name="birthday">
+
+        <h2>input type number</h2>
+        <label for="num">Enter a number</label>
+        <input type="number" id="num" name="num">
+
+        <h2>input type number with attribute min max step and value</h2>
+        <label for="qty">Quentity</label>
+        <input type="number" id="qty" name="qty" min="0" max="100" step="10" value="20">
+
+        <h2>input type range</h2>
+        <label for="vol">Volume(0 between 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+
+        <h2>input type search</h2>
+        <label for="serch">Google search:</label>
+        <input type="search" id="serch" name="serch">
 
 
-<input type="submit" value="Submit">
-
-   </form>
-</body>
+      <h2>input type submit</h2>
+      <input type="submit" value="Submit" />
+      <h2>input type reset</h2>
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
 </html>
